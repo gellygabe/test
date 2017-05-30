@@ -6,7 +6,6 @@
 rm(list=ls())
 
 
-
 library(readr)
 library(dplyr)
 library(stargazer)
@@ -16,14 +15,14 @@ library(plm)  # for panels
 
 
 # CHECK WORKING DIRECTORY
-setwd("C:\\Users\\GÈhl G·bor\\Documents\\Text\\G\\Study\\CEU Study\\2016-2017\\Data_Analysis_3\\Seminars\\Seminar_3\\10_LifeExpectancy")
+setwd("C:\\Users\\G√©hl G√°bor\\Documents\\Text\\G\\Study\\CEU Study\\2016-2017\\Data_Analysis_3\\Seminars\\Seminar_3\\10_LifeExpectancy")
 getwd()
 
 
 getwd()
 setwd("c:/Munka/Google Drive/CEU_PHD/Winter 2017/TA/DA3/data_lab/10_LifeExpectancy/")
 # Program applies additional functions from here
-source("C:\\Users\\GÈhl G·bor\\Documents\\Text\\G\\Study\\CEU Study\\2016-2017\\Data_Analysis_3\\Seminars\\Seminar_1\\da_helper_functions.R")
+source("C:\\Users\\G√©hl G√°bor\\Documents\\Text\\G\\Study\\CEU Study\\2016-2017\\Data_Analysis_3\\Seminars\\Seminar_1\\da_helper_functions.R")
 options(digits = 4)
 
 # Load data --------------------------------------------------------------------
@@ -170,7 +169,7 @@ purtest(panel_health$lifeexp, exo = 'trend', pmax = 0, test = 'ips')
 purtest(log(panel_health$hexppc), exo = 'trend', pmax = 0, test = 'ips')
 purtest(log(panel_health$pop), exo = 'trend', pmax = 0, test = 'ips')
 #this helps test wether we have serial corelations or don't have. The result says (in leifexp) that there is no serial corelation. We don't need to adjust.
-# if there is serial corr., solution can be that we can use diff...??? regression.(tal·n FE v FD???)
+# if there is serial corr., solution can be that we can use diff...??? regression.(tal√°n FE v FD???)
 
 # xcountry OLS: pooled OLS regardless country difference
 
